@@ -89,10 +89,12 @@ nav{
 }
 
 main{
-	padding: 10px;
   height:2400px;
   width:700px;
   background-color: white;
+}
+p{
+	padding: 10px;
 
 }
 
