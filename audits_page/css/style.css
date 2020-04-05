@@ -55,7 +55,12 @@ table {
 
 body{
   background-image: url('../img/bakgrund.webp');
-  background-size: cover no-repeat;
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: auto;
+	width: 100%;
+
   font-family: 'Roboto', sans-serif;
 }
 
@@ -69,8 +74,8 @@ body{
 header{
   width: 1000px;
   height: 200px;
-  background-image: url('../img/finlogga.webp');
-  background-size: contain;
+  background-image: url('../img/finlogga2.jpg');
+
 }
 
 nav{
@@ -87,7 +92,7 @@ main{
   height:2400px;
   width:700px;
   background-color: white;
-  padding: 20px;
+
 }
 
 aside{
