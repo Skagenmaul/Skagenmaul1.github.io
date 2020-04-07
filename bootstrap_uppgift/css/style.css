@@ -1,0 +1,47 @@
+nav{
+  padding: 10px;
+  background-color: #ffffa1;
+  text-align: center;
+  height: 360px;
+}
+#länkar{
+
+  text-align: center;
+}
+main{
+  padding: 10px;
+  text-align: center;
+}
+footer{
+  padding: 10px;
+  text-align: center;
+}
+hr{
+
+  color: #aaaaaa;
+}
+
+.bilder{
+
+   border:1px solid;
+   height: 100px;
+   justify-content: center;
+
+}
+
+img{
+
+  position: center;
+  margin-top: 25px;
+
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+@media only screen and (max-width: 991px) {
+  .play{
+  display: none;
+  }
