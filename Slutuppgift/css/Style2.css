@@ -1,0 +1,147 @@
+body, html{
+  /* overflow: hidden; */
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  height: 100%;
+}
+/*__________________________________________________________*/
+h1{
+  grid-area: logga;
+  position: fixed;
+  position: center;
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  z-index: 10;
+  margin: 0;
+  /* margin: 1rem 1rem 0rem 1rem; */
+
+}
+
+header{
+  grid-area: header;
+  float: right;
+  height: 5rem;
+  width: auto;
+  padding: 0.5rem 1rem 0rem 1rem;
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+}
+/* h2{
+font-family: 'Alfa Slab One';
+font-size: 1vw;
+} */
+
+.overstaHeadern{
+  grid-area: navigation;
+
+  display: block;
+  float: right;
+  left: 0;
+  position: static;
+  max-width: 456px;
+  height: 100%;
+  overflow: hidden;
+  /* background-color: black; */
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  top: 10px;
+
+}
+
+
+.inreoverstaHeadern, a {
+  float: right;
+
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 1.125rem;
+  line-height: 2.57;
+
+}
+.inreoverstaHeadern a:hover {
+  color: green;
+  /* transition: 0.5s; */
+}
+/* .active{
+  background-color:red;
+
+} */
+/*---------------------*/
+
+.dagens_lunch{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  background-image: url('../imgs/PizzaWOlives.jpg');
+  background-size: cover;
+  justify-content: center;
+
+}
+p{
+  font-size: 30px;
+  margin-bottom: 3px;
+}
+hr{
+  height: 2px;
+  background-color: #e09d1b;
+  margin: 0px 10px 2px 10px;
+}
+h4{
+  margin-top: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+h5{
+  margin: 3px 0 8px 0;
+  font-size: 17px;
+}
+h6{
+
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 0.8em;
+  text-decoration: underline;
+
+}
+.information{
+  width: 300px;
+  height: 450px;
+  margin: 5px;
+   margin-top: 25vh;
+   text-align: center;
+   background-color: white;
+   border: 2px solid #e09d1b;
+}
+.tillhörandebild{
+  width: 350px;
+  height: 450px;
+  margin-left: 0;
+   margin-top: 25vh;
+   background-image: url('../imgs/Meny_Mostly_Pizza.jpg');
+   background-size: cover;
+   border: 2px solid #e09d1b;
+   font
+
+}
+
+
+#headern {
+
+  display: grid;
+  grid-template-columns: 10% 20% 70% ;
+
+  grid-template-rows: auto;
+  grid-template-areas:
+  "logga . header";
+  max-height: 100px;
+  background-color: black;
+}

@@ -1,0 +1,488 @@
+/* body, html{
+   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  height: 100%;
+}
+/*__________________________________________________________*/
+/* h1{
+  grid-area: logga;
+  position: fixed;
+  position: center;
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  z-index: 10;
+  margin: 0;
+
+}
+
+header{
+  grid-area: header;
+  float: right;
+  height: 5rem;
+  width: auto;
+  padding: 0.5rem 1rem 0rem 1rem;
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+
+} */
+/* h2{
+font-family: 'Alfa Slab One';
+font-size: 1vw;
+} */
+
+/* .overstaHeadern{
+  grid-area: navigation;
+
+  display: block;
+  float: right;
+  left: 0;
+  position: static;
+  max-width: 456px;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  top: 10px;
+
+}
+
+
+.inreoverstaHeadern, a {
+  float: right;
+
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+
+  font-size: 1.125rem;
+  line-height: 2.57;
+
+}
+.inreoverstaHeadern a:hover {
+  color: green; */
+  /* transition: 0.5s; */
+}
+/*__________________________________________________________*/
+/* main{
+  grid-area: main;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+} */
+/* video{
+  height: 500px;
+  width: 800px;
+  position: relative;
+} */
+/* div{
+
+width:100%;
+height:0;
+padding-bottom:63%;
+position:relative;
+} */
+/* video{
+
+min-width: 100%;
+min-height: 100%;
+position: absolute;
+overflow: hidden;
+transform: none;
+object-fit: cover;
+z-index: 2;
+
+}
+
+.Hero_Citat{
+   grid-area: Citat;
+  z-index: 10;
+  margin-top: 50%;
+} */
+/*__________________________________________________________*/
+/* footer{
+  grid-area: footer;
+
+} */
+
+/*__________________________________________________________*/
+/* #headern {
+
+  display: grid;
+  grid-template-columns: 10% 20% 70% ;
+
+  grid-template-rows: auto;
+  grid-template-areas:
+  "logga . header";
+  max-height: 100px;
+}
+
+#Main_Hero{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "citat";
+  min-height: 100vh;
+} */
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* _____________________________________________________________________________________________________ */
+header{
+  grid-area: header;
+  height: auto;
+  min-width: 100%;
+}
+
+.header{
+  justify-content: center;
+}
+
+span a {
+  display: block;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  transition: 1.0s;
+}
+span img {
+
+width: 100%;
+height: auto;
+
+}
+
+/* _____________________________________________________________________________________________________ */
+.overlay { /* Påverkar overlayen i det stora hela. */
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 1.0s;
+}
+
+.overlay-content { /* Påverkar innehållet i overlay (text bla.)*/
+  position: relative;
+  top: 20%;
+  left: 45%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.overlay a { /* Påverkar länkarna (utan hover) */
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.5s;
+
+}
+
+.overlay a:hover, .overlay a:focus { /* Påverkar länkarnas när muspekaren (hoverar) över dem. */
+  color: green;
+  transition: 1.0s;
+}
+
+.overlay .closebtn { /* Påverkar krysset? */
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* _____________________________________________________________________________________________________ */
+nav{
+  grid-area:nav;
+}
+
+a {
+  float: left;
+  position: relative;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+a.active {
+  background-color: white;
+  color: green;
+}
+
+.topnav  {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav .search-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.topnav input[type=text] {
+  padding: 6px 50px;
+  margin-top: 10px;
+  text-align: left;
+  height: 50px;
+  font-size: 17px;
+  border: 2px solid red;
+  margin-bottom: 1px;
+  margin-left: 1%;
+  width: 98%;
+}
+
+.topnav .search-container {
+  background: #ccc;
+}
+
+/* _____________________________________________________________________________________________________ */
+main {
+  grid-area: main;
+  background-color: #EBFEFE;
+  height: 100%;
+}
+
+.Nyheter {
+  width: 100%;
+  height: 80px;
+  background-color: #B96E02;
+}
+
+.Nyheter  p{
+  margin-top: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #FAFAF3;
+}
+
+.Nyheter form {
+  position: relative;
+}
+
+.lådor {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.lådor div{
+  width: 279px;
+  height: 470px;
+  text-align: center;
+  margin: 1%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.mapbox iframe{
+  width: 75%;
+  height: 450px;
+  border: solid 5px  lightpink;
+  position: static;
+  margin-left: 12.5%;
+  margin-bottom: 5px;
+}
+
+p{
+  text-align: center;
+  font-size: 20px;
+}
+
+iframe{
+width:100%;
+height:450px;
+
+}
+
+/* _____________________________________________________________________________________________________ */
+footer {
+  grid-area: footer;
+  background-color: #B96E02;
+  height: 100px;
+}
+
+footer p{
+  font-size: 10px;
+  text-align: right;
+  margin-top: 87px;
+}
+
+footer  h1{
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* _____________________________________________________________________________________________________ */
+#wrapper {
+
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "header header header header"
+  "nav nav nav nav"
+  "main main main main"
+  "footer footer footer footer";
+}
+
+/* _____________________________________________________________________________________________________ */
+@media screen and (max-width: 1240px) {
+
+  body {
+    background-color: beige;
+  }
+
+  span a {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 1.0s;
+  }
+
+  .lådor {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .lådor div{
+    width: 279px;
+    height: 470px;
+    text-align: center;
+    margin: 1.5%;
+    margin-bottom: 10%;
+    justify-content: center;
+  }
+
+
+  #wrapper{
+    /* display: grid; */
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-rows: auto; */
+    /* grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";*/
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
+
+/* _____________________________________________________________________________________________________ */
+@media screen and (max-width: 625px) {
+
+  body {
+    background-color: lightpink;
+  }
+
+  #wrapper{
+    /* display: grid; */
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-rows: auto; */
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+  }
+  header{
+    height: 100px;
+    background-color: lightpink;
+  }
+
+  span a {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    transition: 1.0s;
+  }
+
+  span img {
+  width: 100%;
+  height: auto;
+  }
+
+  main{
+    background-color: lightblue;
+  }
+
+  .lådor {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .lådor div{
+    width: 279px;
+    height: 470px;
+    text-align: center;
+    margin: 10%;
+    justify-content: center;
+  }
+
+  footer{
+    height: 100px;
+    background-color: #fea;
+  }
+
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+
+  input[type=text]  {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  input[type=text] {
+    border: 1px solid #ccc;
+  }
+
+}
