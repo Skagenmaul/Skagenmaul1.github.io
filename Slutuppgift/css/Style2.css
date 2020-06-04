@@ -4,6 +4,7 @@ body, html{
   padding: 0;
   font-family: serif;
   height: 100%;
+  scroll-behavior: smooth;
 }
 /*__________________________________________________________*/
 h1{
@@ -15,7 +16,6 @@ h1{
   max-height: 100px;
   z-index: 10;
   margin: 0;
-  /* margin: 1rem 1rem 0rem 1rem; */
 
 }
 
@@ -28,30 +28,23 @@ header{
   position: relative;
   z-index: 10;
   background-color: transparent;
-}
-/* h2{
-font-family: 'Alfa Slab One';
-font-size: 1vw;
-} */
 
-.overstaHeadern{
+}
+
+#overstaHeadern{
   grid-area: navigation;
 
   display: block;
   float: right;
   left: 0;
   position: static;
-  max-width: 456px;
+  max-width: 706px;
   height: 100%;
   overflow: hidden;
-  /* background-color: black; */
-
   list-style-type: none;
   margin: 0;
   padding: 0;
-
   top: 10px;
-
 }
 
 
@@ -68,22 +61,28 @@ font-size: 1vw;
 
 }
 .inreoverstaHeadern a:hover {
-  color: green;
-  /* transition: 0.5s; */
+  background-color: white;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(255,255,255,0.70), 0 17px 50px 0 rgba(255,255,255,0.50);
+  transition: 0.5s;
 }
-/* .active{
-  background-color:red;
 
-} */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 /*---------------------*/
 
-.dagens_lunch{
+#Dagens_Lunch{
   display: flex;
   flex-wrap: wrap;
   height: 100%;
   background-image: url('../imgs/PizzaWOlives.jpg');
   background-size: cover;
   justify-content: center;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1);
+
 
 }
 p{
@@ -120,6 +119,8 @@ h6{
    text-align: center;
    background-color: white;
    border: 2px solid #e09d1b;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25), 0 6px 20px 0 rgba(0,0,0,0.25);
+
 }
 .tillhörandebild{
   width: 350px;
@@ -129,9 +130,96 @@ h6{
    background-image: url('../imgs/Meny_Mostly_Pizza.jpg');
    background-size: cover;
    border: 2px solid #e09d1b;
-   font
+   font-family: cursive;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20), 0 6px 20px 0 rgba(0,0,0,0.20);
 
 }
+.tillhörandebild a{
+  height: 100%;
+  width: 100%;
+
+}
+.tillhörandebild h4{
+  font-size: 3.4vh;
+  text-align: center;
+  margin: 11vh 20px 20px 40px;
+}
+
+#Menyer{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+}
+
+.Menydelen, .infoomoss{
+  width: 1200px;
+  height: 800px;
+  margin: 5px;
+   margin-top: 10vh;
+   text-align: center;
+   background-color: white;
+   border: 2px solid #e09d1b;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25), 0 6px 20px 0 rgba(0,0,0,0.25);
+}
+.Menydelen p {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 3vh;
+  font-family: cursive;
+  font-style: italic;
+}
+
+#Om_Oss{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  font-family: monospace;
+  font-style: oblique;
+
+}
+.bildibild{
+  width: 800px;
+  height: 450px;
+   margin-top: 10vh;
+
+   background-image: url('../imgs/Mostly_Pizza_Workers.png');
+   background-size: cover;
+   border: 2px solid #e09d1b;
+   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20), 0 6px 20px 0 rgba(0,0,0,0.20); */
+
+
+}
+
+#Hitta_Till_Oss{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+
+  justify-content: center;
+
+}
+.mapbox{
+  width: 1200px;
+  height: 800px;
+  margin: 5px;
+   /* margin-top: 5vh; */
+   /* text-align: left; */
+   background-color: white;
+   border: 2px solid #e09d1b;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25), 0 6px 20px 0 rgba(0,0,0,0.25);
+
+}
+.mapbox iframe{
+  width: 99%;
+  height: 450px;
+  position: static;
+  margin-bottom: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25), 0 6px 20px 0 rgba(0,0,0,0.25);
+
+}
+
 
 
 #headern {
@@ -142,6 +230,8 @@ h6{
   grid-template-rows: auto;
   grid-template-areas:
   "logga . header";
+  min-width: 100%;
   max-height: 100px;
   background-color: black;
+  position: fixed;
 }
