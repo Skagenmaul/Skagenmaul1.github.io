@@ -310,4 +310,10 @@ h6{
   }
 
 
-@media screen and (max-width: 510px) {}
+@media screen and (max-width: 357px) {
+  #Hitta_Till_Oss{
+    margin-top: 20px;
+
+  }
+
+}
