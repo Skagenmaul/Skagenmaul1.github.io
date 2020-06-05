@@ -310,10 +310,12 @@ h6{
   }
 
 
-@media screen and (max-width: 357px) {
-  #Hitta_Till_Oss{
+@media screen and (max-height: 780px) {
+  #Hitta_Till_Oss, .mapbox{
     margin-top: 20px;
 
+
   }
+
 
 }
