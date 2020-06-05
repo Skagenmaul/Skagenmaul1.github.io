@@ -18,6 +18,9 @@ h1{
   margin: 0;
 
 }
+h1 a{
+  float: none;
+}
 
 header{
   grid-area: header;
@@ -45,6 +48,7 @@ header{
   margin: 0;
   padding: 0;
   top: 10px;
+  z-index: 10;
 }
 
 
@@ -58,6 +62,7 @@ header{
   padding: 10px 10px;
   font-size: 1.125rem;
   line-height: 2.57;
+  z-index: 10;
 
 }
 .inreoverstaHeadern a:hover {
@@ -71,6 +76,8 @@ header{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
+
 }
 /*---------------------*/
 
@@ -137,8 +144,8 @@ h6{
 .tillhörandebild a{
   height: 100%;
   width: 100%;
-
 }
+
 .tillhörandebild h4{
   font-size: 3.4vh;
   text-align: center;
@@ -162,6 +169,7 @@ h6{
    border: 2px solid #e09d1b;
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25), 0 6px 20px 0 rgba(0,0,0,0.25);
 }
+
 .Menydelen p {
   margin-left: 20px;
   margin-top: 20px;
@@ -181,34 +189,39 @@ h6{
 }
 .bildibild{
   width: 800px;
-  height: 450px;
-   margin-top: 10vh;
+  height: 370px;
+  margin-top: 10vh;
+  /* left: 10vh; */
+  border: 2px solid #e09d1b;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20), 0 6px 20px 0 rgba(0,0,0,0.20);
+}
 
-   background-image: url('../imgs/Mostly_Pizza_workers.png');
-   background-size: cover;
-   border: 2px solid #e09d1b;
-   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20), 0 6px 20px 0 rgba(0,0,0,0.20); */
-
-
+.bildibild img{
+  max-width: 100%;
+  left: 10vh;
 }
 
 #Hitta_Till_Oss{
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-
   justify-content: center;
-
+  font-family: monospace;
+  font-style: oblique;
 }
+
 .mapbox{
   width: 1200px;
   height: 800px;
   margin: 5px;
+  margin-top: 10vh;
+
    /* margin-top: 5vh; */
    /* text-align: left; */
    background-color: white;
    border: 2px solid #e09d1b;
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25), 0 6px 20px 0 rgba(0,0,0,0.25);
+   text-align: center;
 
 }
 .mapbox iframe{
@@ -219,6 +232,13 @@ h6{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.25), 0 6px 20px 0 rgba(0,0,0,0.25);
 
 }
+
+.mapbox a{
+  float: none;
+  background-color: red;
+
+}
+
 
 
 
@@ -235,3 +255,61 @@ h6{
   background-color: black;
   position: fixed;
 }
+
+@media screen and (max-width: 850px) {
+
+#headern{
+  grid-template-columns: 10% 90%;
+  grid-template-areas:
+  "logga header";
+}
+
+
+}
+@media screen and (max-width: 686px) {
+
+  .tillhörandebild{
+    display: none;
+  }
+  .information{
+    width: 500px;
+
+  }
+  .inreoverstaHeadern a{
+    padding: 10px 10px;
+    font-size: 1rem;
+
+  }
+}
+  @media screen and (max-width: 644px) {
+    #overstaHeadern{
+      display: none;
+    }
+    header{
+      display: none;
+    }
+    #Menyer{
+      margin-top: 0;
+    }
+    .infoomoss p{
+      font-size: 3.3vh;
+
+    }
+    .Menydelen, .infoomoss, .mapbox{
+      margin-top: 0;
+
+    }
+
+
+
+}
+  @media screen and (max-width: 600px) {
+
+    .infoomoss{
+      height: 1000px;
+    }
+
+  }
+
+
+@media screen and (max-width: 510px) {}
