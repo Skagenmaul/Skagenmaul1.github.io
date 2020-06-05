@@ -78,7 +78,7 @@ font-size: 1vw;
   /* transition: 0.5s; */
 }
 /* .active{
-  background-color:red;
+background-color:red;
 
 } */
 /*__________________________________________________________*/
@@ -93,13 +93,13 @@ main{
 
 video{
 
-min-width: 100%;
-min-height: 100%;
-position: absolute;
-transform: none;
-object-fit: cover;
-z-index: 2;
-overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  transform: none;
+  object-fit: cover;
+  z-index: 2;
+  overflow: hidden;
 
 }
 main{
@@ -148,14 +148,14 @@ main{
 
 @media screen and (max-width: 850px) {
 
-#headern{
-  grid-template-columns: 10% 90%;
-  grid-template-areas:
-  "logga header";
-}
-.Hero_Citat{
-  font-size: 4rem;
-}
+  #headern{
+    grid-template-columns: 10% 90%;
+    grid-template-areas:
+    "logga header";
+  }
+  .Hero_Citat{
+    font-size: 4rem;
+  }
 
 
 }
